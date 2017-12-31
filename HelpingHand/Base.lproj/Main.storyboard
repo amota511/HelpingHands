@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b8O-6S-vbc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DevanagariSangamMN.ttc">
+            <string>DevanagariSangamMN-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="2Yw-xn-zl9">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="1Bu-QV-yYr" customClass="PageViewController" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T5L-z2-Uki" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="134"/>
+        </scene>
+        <!--VIewController01-->
+        <scene sceneID="6M2-aS-Rub">
+            <objects>
+                <viewController storyboardIdentifier="VIewController01" title="VIewController01" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uz1-v4-3Et" customClass="ViewController01" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sXE-Sz-Ywn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Homehealth_driver04" translatesAutoresizingMaskIntoConstraints="NO" id="YWU-1P-y9k">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6M-TA-vgY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.14636479591836735" green="0.16969600340136054" blue="0.14570046768707484" alpha="0.37093645134228187" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transportation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5b9-XE-dwX">
+                                <rect key="frame" x="70" y="69" width="235" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="FvJ-uf-bDs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's our job to get you or your loved one from point A to point B." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMh-eq-Svn">
+                                <rect key="frame" x="70" y="447" width="224" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="MIw-fn-JR1"/>
+                                    <constraint firstAttribute="width" constant="224" id="Vuq-3J-0PH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50946003399999995" blue="0.52444727889999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YWU-1P-y9k" firstAttribute="bottom" secondItem="fxb-Rd-dvJ" secondAttribute="bottom" id="2Up-YJ-2lX"/>
+                            <constraint firstItem="fxb-Rd-dvJ" firstAttribute="bottom" secondItem="HMh-eq-Svn" secondAttribute="bottom" constant="79" id="5k6-uE-5u6"/>
+                            <constraint firstItem="l6M-TA-vgY" firstAttribute="top" secondItem="YWU-1P-y9k" secondAttribute="top" id="AdL-eL-sOk"/>
+                            <constraint firstItem="l6M-TA-vgY" firstAttribute="leading" secondItem="YWU-1P-y9k" secondAttribute="leading" id="Ejv-t7-zLr"/>
+                            <constraint firstItem="YWU-1P-y9k" firstAttribute="top" secondItem="sXE-Sz-Ywn" secondAttribute="top" id="IFe-mI-hQn"/>
+                            <constraint firstItem="YWU-1P-y9k" firstAttribute="centerX" secondItem="5b9-XE-dwX" secondAttribute="centerX" id="MKX-4k-ecr"/>
+                            <constraint firstItem="5b9-XE-dwX" firstAttribute="leading" secondItem="HMh-eq-Svn" secondAttribute="leading" id="MbE-Uh-NzX"/>
+                            <constraint firstItem="5b9-XE-dwX" firstAttribute="top" secondItem="fxb-Rd-dvJ" secondAttribute="top" constant="49" id="PjG-yB-DFJ"/>
+                            <constraint firstItem="l6M-TA-vgY" firstAttribute="trailing" secondItem="YWU-1P-y9k" secondAttribute="trailing" id="SZb-Md-iId"/>
+                            <constraint firstItem="5b9-XE-dwX" firstAttribute="leading" secondItem="fxb-Rd-dvJ" secondAttribute="leading" constant="70" id="bWr-U1-QYh"/>
+                            <constraint firstItem="YWU-1P-y9k" firstAttribute="leading" secondItem="sXE-Sz-Ywn" secondAttribute="leading" id="r37-tu-ixc"/>
+                            <constraint firstAttribute="trailing" secondItem="YWU-1P-y9k" secondAttribute="trailing" id="wBx-gN-2kB"/>
+                            <constraint firstItem="l6M-TA-vgY" firstAttribute="bottom" secondItem="fxb-Rd-dvJ" secondAttribute="bottom" id="yAO-ib-rm1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fxb-Rd-dvJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Qw-K4-LNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1568.8" y="133.5832083958021"/>
+        </scene>
+        <!--VIewController02-->
+        <scene sceneID="AqL-4R-1Wy">
+            <objects>
+                <viewController storyboardIdentifier="VIewController02" title="VIewController02" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i4V-cM-PKn" customClass="ViewController02" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sXh-M5-Nfw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homehealth01" translatesAutoresizingMaskIntoConstraints="NO" id="faI-Qz-iN2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lzm-VE-7G3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.14636479591836735" green="0.16969600340136054" blue="0.14570046768707484" alpha="0.37093645134228187" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjx-RC-pw5">
+                                <rect key="frame" x="70" y="69" width="235" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Q23-Yi-AzJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="33"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We'll handle picking up your medication and bring it straight to your bedside." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJl-Uc-BSd">
+                                <rect key="frame" x="70" y="447" width="224" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="1kE-am-rUk"/>
+                                    <constraint firstAttribute="width" constant="224" id="3xs-iu-0Um"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50946003399999995" blue="0.52444727889999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lzm-VE-7G3" firstAttribute="leading" secondItem="faI-Qz-iN2" secondAttribute="leading" id="18y-yv-ma4"/>
+                            <constraint firstItem="Lzm-VE-7G3" firstAttribute="bottom" secondItem="faI-Qz-iN2" secondAttribute="bottom" id="4Rb-4K-eSw"/>
+                            <constraint firstItem="faI-Qz-iN2" firstAttribute="leading" secondItem="sXh-M5-Nfw" secondAttribute="leading" id="5l4-cR-JYF"/>
+                            <constraint firstItem="Lzm-VE-7G3" firstAttribute="trailing" secondItem="faI-Qz-iN2" secondAttribute="trailing" id="Aua-cZ-DCI"/>
+                            <constraint firstItem="Lzm-VE-7G3" firstAttribute="top" secondItem="faI-Qz-iN2" secondAttribute="top" id="BH4-e6-ifv"/>
+                            <constraint firstItem="Vjx-RC-pw5" firstAttribute="leading" secondItem="7xT-5M-KHQ" secondAttribute="leading" constant="70" id="FRq-Jj-0qW"/>
+                            <constraint firstItem="7xT-5M-KHQ" firstAttribute="bottom" secondItem="gJl-Uc-BSd" secondAttribute="bottom" constant="79" id="LnM-ks-FWY"/>
+                            <constraint firstItem="Vjx-RC-pw5" firstAttribute="leading" secondItem="gJl-Uc-BSd" secondAttribute="leading" id="Qbp-hr-eW3"/>
+                            <constraint firstItem="Vjx-RC-pw5" firstAttribute="top" secondItem="7xT-5M-KHQ" secondAttribute="top" constant="49" id="Qtp-pF-bSh"/>
+                            <constraint firstItem="faI-Qz-iN2" firstAttribute="bottom" secondItem="7xT-5M-KHQ" secondAttribute="bottom" id="Ylk-dg-RY5"/>
+                            <constraint firstItem="faI-Qz-iN2" firstAttribute="centerX" secondItem="Vjx-RC-pw5" secondAttribute="centerX" id="c26-cH-lwl"/>
+                            <constraint firstAttribute="trailing" secondItem="faI-Qz-iN2" secondAttribute="trailing" id="nmd-IJ-APT"/>
+                            <constraint firstItem="faI-Qz-iN2" firstAttribute="top" secondItem="sXh-M5-Nfw" secondAttribute="top" id="rWB-lr-tcg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7xT-5M-KHQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D4I-KW-YBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2344.8000000000002" y="133.5832083958021"/>
+        </scene>
+        <!--VIewController03-->
+        <scene sceneID="cjk-93-wbf">
+            <objects>
+                <viewController storyboardIdentifier="VIewController03" title="VIewController03" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mSB-CS-0xj" customClass="ViewController03" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wzh-mS-jPm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Homehealth07" translatesAutoresizingMaskIntoConstraints="NO" id="gRu-De-GaF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TsP-xi-xKi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.14636479590000001" green="0.16969600339999999" blue="0.1457004677" alpha="0.37093645130000003" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Care Taking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ame-5h-AHM">
+                                <rect key="frame" x="70" y="69" width="235" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="haf-ks-o5T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooking and baths are all handled relieving you of any unneccessary stress." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mlm-WW-ldi">
+                                <rect key="frame" x="70" y="447" width="224" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="K0g-GB-FE6"/>
+                                    <constraint firstAttribute="height" constant="141" id="ydp-X4-k8C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50946003399999995" blue="0.52444727889999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bBr-aC-9Rp" firstAttribute="bottom" secondItem="Mlm-WW-ldi" secondAttribute="bottom" constant="79" id="2gM-Cb-FTk"/>
+                            <constraint firstItem="ame-5h-AHM" firstAttribute="top" secondItem="bBr-aC-9Rp" secondAttribute="top" constant="49" id="7O5-Ht-DVN"/>
+                            <constraint firstItem="ame-5h-AHM" firstAttribute="leading" secondItem="bBr-aC-9Rp" secondAttribute="leading" constant="70" id="7ux-Lr-cbN"/>
+                            <constraint firstItem="gRu-De-GaF" firstAttribute="centerX" secondItem="ame-5h-AHM" secondAttribute="centerX" id="KQ0-BU-hAn"/>
+                            <constraint firstItem="gRu-De-GaF" firstAttribute="bottom" secondItem="bBr-aC-9Rp" secondAttribute="bottom" id="RpM-b8-9zi"/>
+                            <constraint firstItem="gRu-De-GaF" firstAttribute="top" secondItem="wzh-mS-jPm" secondAttribute="top" id="XlM-ze-Z3E"/>
+                            <constraint firstItem="ame-5h-AHM" firstAttribute="leading" secondItem="Mlm-WW-ldi" secondAttribute="leading" id="fUX-iI-dro"/>
+                            <constraint firstItem="gRu-De-GaF" firstAttribute="leading" secondItem="wzh-mS-jPm" secondAttribute="leading" id="hxu-F1-Ew1"/>
+                            <constraint firstAttribute="trailing" secondItem="gRu-De-GaF" secondAttribute="trailing" id="nSh-vl-aSa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bBr-aC-9Rp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIK-aK-R1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3077.5999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--VIewController04-->
+        <scene sceneID="Ip0-C7-xND">
+            <objects>
+                <viewController storyboardIdentifier="VIewController04" title="VIewController04" useStoryboardIdentifierAsRestorationIdentifier="YES" id="93h-kz-COn" customClass="ViewController04" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MqP-0I-3vg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helpinghands03" translatesAutoresizingMaskIntoConstraints="NO" id="sgs-1v-dww">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irJ-Fe-nHs">
+                                <rect key="frame" x="70" y="69" width="235" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="PRJ-rR-oqf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aS-Kj-blM">
+                                <rect key="frame" x="103" y="255" width="168" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.62745098039215685" blue="0.1764705882352941" alpha="0.7540373322147651" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpButton:" destination="93h-kz-COn" eventType="touchUpInside" id="a3I-yq-TYE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97o-LO-Wb9">
+                                <rect key="frame" x="104" y="339" width="168" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.62561118199999999" blue="0.17602040820000001" alpha="0.74588401845637575" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInButton:" destination="93h-kz-COn" eventType="touchUpInside" id="1Nt-jA-V97"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50946003399999995" blue="0.52444727889999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sgs-1v-dww" firstAttribute="leading" secondItem="MqP-0I-3vg" secondAttribute="leading" id="41d-P4-w56"/>
+                            <constraint firstItem="irJ-Fe-nHs" firstAttribute="top" secondItem="prI-15-gV2" secondAttribute="top" constant="49" id="EEQ-jc-Kww"/>
+                            <constraint firstItem="sgs-1v-dww" firstAttribute="centerX" secondItem="irJ-Fe-nHs" secondAttribute="centerX" id="Hes-Cu-5oB"/>
+                            <constraint firstAttribute="trailing" secondItem="sgs-1v-dww" secondAttribute="trailing" id="PKj-Vp-9fd"/>
+                            <constraint firstItem="irJ-Fe-nHs" firstAttribute="leading" secondItem="prI-15-gV2" secondAttribute="leading" constant="70" id="SvY-Li-MZl"/>
+                            <constraint firstItem="sgs-1v-dww" firstAttribute="top" secondItem="MqP-0I-3vg" secondAttribute="top" id="hoA-Qg-cSt"/>
+                            <constraint firstItem="sgs-1v-dww" firstAttribute="bottom" secondItem="prI-15-gV2" secondAttribute="bottom" id="wJl-5Q-P4y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="prI-15-gV2"/>
+                    </view>
+                    <connections>
+                        <outlet property="signIn" destination="97o-LO-Wb9" id="N4q-mg-iLI"/>
+                        <outlet property="signUpOutlet" destination="4aS-Kj-blM" id="b7x-qo-ylA"/>
+                        <segue destination="esN-OF-C03" kind="show" identifier="SignUpSegue" id="Yfj-aa-GZ5"/>
+                        <segue destination="VRy-AM-hD7" kind="show" identifier="SignInSegue" id="POm-Jk-3g6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mu9-2M-RDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3804" y="134"/>
+        </scene>
+        <!--Sign InVC-->
+        <scene sceneID="w4L-ui-H0y">
+            <objects>
+                <viewController id="VRy-AM-hD7" customClass="SignInVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OSj-5Z-4hj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="jUh-eK-0pc"/>
+                    </view>
+                    <connections>
+                        <segue destination="b8O-6S-vbc" kind="show" identifier="SignInCustHomeSegue" id="KKi-CA-cvb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aN2-SW-eP3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4975" y="562"/>
+        </scene>
+        <!--Home Care-->
+        <scene sceneID="cPN-ar-R3f">
+            <objects>
+                <viewController id="6ba-Lf-yg1" customClass="HomeHealthCareVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n1i-vA-xVw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.50946003399999995" blue="0.52444727889999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Jy0-8z-1vU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home Care" image="homeCare_icon" id="rRy-Sb-fWC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gft-FN-hz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8454" y="734"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="B2O-Cl-jXm">
+            <objects>
+                <viewController id="Lnr-Fc-782" customClass="SettingsVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="14D-RU-L1V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.08235294118" green="0.1137254902" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Vg0-Lh-IVO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings_icon" id="JTy-fi-gE8">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUw-Ua-D4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8454" y="1633"/>
+        </scene>
+        <!--Delivery-->
+        <scene sceneID="5CY-i5-Z1o">
+            <objects>
+                <collectionViewController id="mKD-Pp-DgN" customClass="DeliveryVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="GKs-tc-Q3a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.44754464285714274" green="0.44642857142857145" blue="0.44634885204081631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="1" id="37g-d7-GRM">
+                            <size key="itemSize" width="185" height="185"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Sis-Ax-ivV">
+                                <rect key="frame" x="95" y="0.0" width="185" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="185" height="185"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="mKD-Pp-DgN" id="MKQ-L6-6Hs"/>
+                            <outlet property="delegate" destination="mKD-Pp-DgN" id="K8T-VB-Q6R"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Delivery" image="delivery_icon" id="AMe-oR-gbl"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KL0-DY-76w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8454" y="53"/>
+        </scene>
+        <!--Transportation-->
+        <scene sceneID="Ef9-eY-E0i">
+            <objects>
+                <viewController id="fDY-pj-onw" customClass="TransportationVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kkp-Dz-jXh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.3041067616" green="0.60766265600000002" blue="0.72484611740000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="SoF-hc-FI8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Transportation" image="Transportation_icon" id="JES-fW-20l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDJ-oa-J3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8454" y="-721"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="d73-ll-a7K">
+            <objects>
+                <tabBarController id="b8O-6S-vbc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hLZ-wt-Ddg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.62561118199999999" blue="0.17602040820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fDY-pj-onw" kind="relationship" relationship="viewControllers" id="hm3-qh-4eH"/>
+                        <segue destination="mKD-Pp-DgN" kind="relationship" relationship="viewControllers" id="Y20-ly-ghe"/>
+                        <segue destination="6ba-Lf-yg1" kind="relationship" relationship="viewControllers" id="ONn-ji-Knx"/>
+                        <segue destination="Lnr-Fc-782" kind="relationship" relationship="viewControllers" id="VgS-C9-syq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2VK-z3-9XO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6871" y="134"/>
+        </scene>
+        <!--Sign Up GeneralVC-->
+        <scene sceneID="EfO-hu-x2B">
+            <objects>
+                <viewController id="esN-OF-C03" customClass="SignUpGeneralVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fys-qQ-CQC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who Are You?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGn-T5-W2s">
+                                <rect key="frame" x="70" y="75" width="235" height="63"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1K-jd-gwm">
+                                <rect key="frame" x="103" y="221" width="168" height="52"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ipx-n6-fQw"/>
+                                </constraints>
+                                <state key="normal" title="Customer">
+                                    <color key="titleColor" red="1" green="0.62561118199999999" blue="0.17602040820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="customerButton:" destination="esN-OF-C03" eventType="touchUpInside" id="NA6-QN-qgp"/>
+                                    <action selector="signUpButton:" destination="93h-kz-COn" eventType="touchUpInside" id="H6R-fn-xPO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHk-GI-eeN">
+                                <rect key="frame" x="103" y="307" width="168" height="52"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="zfx-BA-vCH"/>
+                                </constraints>
+                                <state key="normal" title="Driver">
+                                    <color key="titleColor" red="1" green="0.62561118199999999" blue="0.17602040820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="driverButton:" destination="esN-OF-C03" eventType="touchUpInside" id="dju-iU-km6"/>
+                                    <action selector="signInButton:" destination="93h-kz-COn" eventType="touchUpInside" id="JHo-GY-NMJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvp-mb-G9b">
+                                <rect key="frame" x="103" y="394" width="168" height="52"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Nurse">
+                                    <color key="titleColor" red="1" green="0.62561118199999999" blue="0.17602040820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nurseButton:" destination="esN-OF-C03" eventType="touchUpInside" id="SgA-T0-xYl"/>
+                                    <action selector="signUpButton:" destination="93h-kz-COn" eventType="touchUpInside" id="S2C-eZ-tks"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.62561118199999999" blue="0.17602040820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="p1K-jd-gwm" firstAttribute="leading" secondItem="S7S-xU-vdV" secondAttribute="leading" constant="103" id="1HE-OK-Wex"/>
+                            <constraint firstItem="AHk-GI-eeN" firstAttribute="leading" secondItem="Pvp-mb-G9b" secondAttribute="leading" id="20h-m2-3rQ"/>
+                            <constraint firstItem="JGn-T5-W2s" firstAttribute="leading" secondItem="S7S-xU-vdV" secondAttribute="leading" constant="70" id="39I-la-VcI"/>
+                            <constraint firstItem="JGn-T5-W2s" firstAttribute="centerX" secondItem="p1K-jd-gwm" secondAttribute="centerX" id="6Ew-sn-fvB"/>
+                            <constraint firstItem="p1K-jd-gwm" firstAttribute="centerX" secondItem="fys-qQ-CQC" secondAttribute="centerX" id="APa-Qe-QAQ"/>
+                            <constraint firstItem="p1K-jd-gwm" firstAttribute="top" secondItem="JGn-T5-W2s" secondAttribute="bottom" constant="83" id="G0C-ZW-TaH"/>
+                            <constraint firstItem="p1K-jd-gwm" firstAttribute="leading" secondItem="AHk-GI-eeN" secondAttribute="leading" id="HlB-9m-jqh"/>
+                            <constraint firstItem="AHk-GI-eeN" firstAttribute="trailing" secondItem="Pvp-mb-G9b" secondAttribute="trailing" id="JTp-u9-ujf"/>
+                            <constraint firstItem="JGn-T5-W2s" firstAttribute="top" secondItem="S7S-xU-vdV" secondAttribute="top" constant="55" id="SeM-H0-gkk"/>
+                            <constraint firstItem="AHk-GI-eeN" firstAttribute="top" secondItem="p1K-jd-gwm" secondAttribute="bottom" constant="34" id="g7a-AO-PPE"/>
+                            <constraint firstItem="S7S-xU-vdV" firstAttribute="bottom" secondItem="Pvp-mb-G9b" secondAttribute="bottom" constant="221" id="lYg-0D-cKW"/>
+                            <constraint firstItem="Pvp-mb-G9b" firstAttribute="top" secondItem="AHk-GI-eeN" secondAttribute="bottom" constant="35" id="p9b-d4-Hsp"/>
+                            <constraint firstItem="AHk-GI-eeN" firstAttribute="centerY" secondItem="fys-qQ-CQC" secondAttribute="centerY" id="vAg-AA-Lm4"/>
+                            <constraint firstItem="p1K-jd-gwm" firstAttribute="trailing" secondItem="AHk-GI-eeN" secondAttribute="trailing" id="zs5-JA-FJL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S7S-xU-vdV"/>
+                    </view>
+                    <connections>
+                        <outlet property="customerOutlet" destination="p1K-jd-gwm" id="ONu-P8-OhT"/>
+                        <outlet property="driverOutlet" destination="AHk-GI-eeN" id="U79-xH-0lD"/>
+                        <outlet property="nurseOutlet" destination="Pvp-mb-G9b" id="WnU-1B-bFI"/>
+                        <segue destination="IJ4-RU-50I" kind="show" identifier="SignUpCustomerSegue" id="wOO-nW-6dF"/>
+                        <segue destination="OCr-gm-qBk" kind="show" identifier="SignUpDriverSegue" id="VVB-UH-6by"/>
+                        <segue destination="YSQ-bP-M6N" kind="show" identifier="SignUpNurseSegue" id="sjS-a5-CeU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uJe-Tz-lAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4968.8000000000002" y="-258.62068965517244"/>
+        </scene>
+        <!--Sign Up DriverVC-->
+        <scene sceneID="5TQ-Jz-TPS">
+            <objects>
+                <viewController id="OCr-gm-qBk" customClass="SignUpDriverVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0GJ-X0-hXI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="I7d-Hb-bwT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5WB-ej-63m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4969" y="-1123"/>
+        </scene>
+        <!--Sign Up NurseVC-->
+        <scene sceneID="bSA-Fo-Vsi">
+            <objects>
+                <viewController id="YSQ-bP-M6N" customClass="SignUpNurseVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CP1-5W-1XN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="FdH-Cm-Wgl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qUV-Ze-p7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3804" y="-1123"/>
+        </scene>
+        <!--Sign Up CustomerVC-->
+        <scene sceneID="i3j-bh-A9f">
+            <objects>
+                <viewController id="IJ4-RU-50I" customClass="SignUpCustomerVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9d4-jM-XxF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="GhT-kT-lAV"/>
+                    </view>
+                    <connections>
+                        <segue destination="b8O-6S-vbc" kind="show" identifier="SignUpCustHomeSegue" id="Fja-zf-gJF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Au-1E-lLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6127" y="-1123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Homehealth07" width="1961" height="1654"/>
+        <image name="Homehealth_driver04" width="792" height="1363"/>
+        <image name="Transportation_icon" width="28" height="26"/>
+        <image name="delivery_icon" width="32" height="26"/>
+        <image name="helpinghands03" width="750" height="499"/>
+        <image name="homeCare_icon" width="23" height="25"/>
+        <image name="homehealth01" width="897" height="750"/>
+        <image name="settings_icon" width="29" height="29"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="KKi-CA-cvb"/>
+    </inferredMetricsTieBreakers>
+</document>
