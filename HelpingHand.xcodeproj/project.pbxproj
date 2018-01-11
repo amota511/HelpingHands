@@ -13,6 +13,7 @@
 		1A7B52311FF7869700563321 /* HomeHealthCareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B52301FF7869700563321 /* HomeHealthCareVC.swift */; };
 		1A7B52331FF786A800563321 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B52321FF786A800563321 /* SettingsVC.swift */; };
 		1A7B52351FF8619600563321 /* DeliveryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B52341FF8619600563321 /* DeliveryItemCell.swift */; };
+		1A890F482007BEB8008B490E /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A890F472007BEB8008B490E /* StartVC.swift */; };
 		1A974DB31FF5BAE900BEC452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A974DB21FF5BAE900BEC452 /* AppDelegate.swift */; };
 		1A974DB51FF5BAE900BEC452 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A974DB41FF5BAE900BEC452 /* PageViewController.swift */; };
 		1A974DB81FF5BAE900BEC452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A974DB61FF5BAE900BEC452 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		1A974DD11FF61C1200BEC452 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A974DD01FF61C1200BEC452 /* SignInVC.swift */; };
 		1A974DD31FF626DE00BEC452 /* SignUpGeneralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A974DD21FF626DE00BEC452 /* SignUpGeneralVC.swift */; };
 		1A974DD51FF62E2000BEC452 /* SignUpNurseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A974DD41FF62E2000BEC452 /* SignUpNurseVC.swift */; };
+		1AC7431B1FF8B7AD009CB3AC /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC7431A1FF8B7AD009CB3AC /* HeaderView.swift */; };
 		369E2E927549E8154D75679F /* Pods_HelpingHand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C68FAAA1B905DDBE2363735 /* Pods_HelpingHand.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,7 @@
 		1A7B52301FF7869700563321 /* HomeHealthCareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHealthCareVC.swift; sourceTree = "<group>"; };
 		1A7B52321FF786A800563321 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		1A7B52341FF8619600563321 /* DeliveryItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryItemCell.swift; sourceTree = "<group>"; };
+		1A890F472007BEB8008B490E /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		1A974DAF1FF5BAE900BEC452 /* HelpingHand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpingHand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A974DB21FF5BAE900BEC452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A974DB41FF5BAE900BEC452 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		1A974DD01FF61C1200BEC452 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		1A974DD21FF626DE00BEC452 /* SignUpGeneralVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpGeneralVC.swift; sourceTree = "<group>"; };
 		1A974DD41FF62E2000BEC452 /* SignUpNurseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNurseVC.swift; sourceTree = "<group>"; };
+		1AC7431A1FF8B7AD009CB3AC /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		6C68FAAA1B905DDBE2363735 /* Pods_HelpingHand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpingHand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		701B41E63DA2EB40AD02F610 /* Pods-HelpingHand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpingHand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelpingHand/Pods-HelpingHand.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,8 +98,10 @@
 				1A974DB21FF5BAE900BEC452 /* AppDelegate.swift */,
 				1A974DB41FF5BAE900BEC452 /* PageViewController.swift */,
 				1A974DB61FF5BAE900BEC452 /* Main.storyboard */,
+				1A890F472007BEB8008B490E /* StartVC.swift */,
 				1A7B522C1FF7863500563321 /* TransportationVC.swift */,
 				1A7B522E1FF7865500563321 /* DeliveryVC.swift */,
+				1AC7431A1FF8B7AD009CB3AC /* HeaderView.swift */,
 				1A7B52341FF8619600563321 /* DeliveryItemCell.swift */,
 				1A7B52301FF7869700563321 /* HomeHealthCareVC.swift */,
 				1A7B52321FF786A800563321 /* SettingsVC.swift */,
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A974DCF1FF5E4DA00BEC452 /* SignUpDriverVC.swift in Sources */,
+				1AC7431B1FF8B7AD009CB3AC /* HeaderView.swift in Sources */,
 				1A974DD51FF62E2000BEC452 /* SignUpNurseVC.swift in Sources */,
+				1A890F482007BEB8008B490E /* StartVC.swift in Sources */,
 				1A7B52311FF7869700563321 /* HomeHealthCareVC.swift in Sources */,
 				1A974DB51FF5BAE900BEC452 /* PageViewController.swift in Sources */,
 				1A7B522D1FF7863500563321 /* TransportationVC.swift in Sources */,

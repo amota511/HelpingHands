@@ -15,6 +15,7 @@ class DeliveryVC: UICollectionViewController {
         super.viewDidLoad()
         
         self.collectionView!.register(DeliveryItemCell.self, forCellWithReuseIdentifier: "DeliveryItemCell")
+        //self.collectionView!.register(HeaderView.self, forCellWithReuseIdentifier: "HeaderView")
         
         self.collectionView!.isScrollEnabled = true
         //self.collectionView!.backgroundColor = UIColor(r: 85, g: 185, b: 85)
@@ -52,6 +53,13 @@ class DeliveryVC: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
+//
+//    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+//        //let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderView", for: indexPath) as! HeaderView
+//
+//       // UICollectionElementKindSectionHeader
+//        return header
+//    }
     
     
 }
