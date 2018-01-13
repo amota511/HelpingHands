@@ -39,9 +39,11 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 
         setViewControllers([subViewControllers[0]], direction: .forward, animated: true, completion: nil)
         
-        
+        setup()
+    }
+    
+    func setup() {
         createTopLabel()
-        
         createLoginButton()
         createSignUpButton()
         configurePageControl()
@@ -121,7 +123,16 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         loginButton.layer.cornerRadius = 3.5
         loginButton.clipsToBounds = true
         
+        loginButton.addTarget(self, action: #selector(self.login), for: .touchUpInside)
+        
         view.addSubview(loginButton)
+    }
+    
+    @objc func login() {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let SignIn: SignInVC = storyboard.instantiateViewController(withIdentifier: "SignInVC") as! SignInVC
+        
+        present(SignIn, animated: true, completion: nil)
     }
     
     func createSignUpButton() {
@@ -140,7 +151,16 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         signUpButton.layer.cornerRadius = 3.5
         signUpButton.clipsToBounds = true
         
+        signUpButton.addTarget(self, action: #selector(self.signUp), for: .touchUpInside)
+        
         view.addSubview(signUpButton)
+    }
+    
+    @objc func signUp() {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let SignUp: SignUpGeneralVC = storyboard.instantiateViewController(withIdentifier: "SignUpGeneralVC") as! SignUpGeneralVC
+        
+        present(SignUp, animated: true, completion: nil)
     }
     
     required init?(coder: NSCoder) {

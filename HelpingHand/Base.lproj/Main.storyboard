@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dyz-jX-bnV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dyz-jX-bnV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,6 +23,10 @@
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="1Bu-QV-yYr" customClass="PageViewController" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="esN-OF-C03" kind="presentation" id="c97-oN-i6R"/>
+                        <segue destination="VRy-AM-hD7" kind="presentation" identifier="login" id="w8o-nE-roY"/>
+                    </connections>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T5L-z2-Uki" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,18 +189,16 @@
                     <connections>
                         <outlet property="signIn" destination="97o-LO-Wb9" id="N4q-mg-iLI"/>
                         <outlet property="signUpOutlet" destination="4aS-Kj-blM" id="b7x-qo-ylA"/>
-                        <segue destination="esN-OF-C03" kind="presentation" identifier="SignUpSegue" modalTransitionStyle="flipHorizontal" id="Yfj-aa-GZ5"/>
-                        <segue destination="VRy-AM-hD7" kind="show" identifier="SignInSegue" id="POm-Jk-3g6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mu9-2M-RDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3804" y="134"/>
+            <point key="canvasLocation" x="3890" y="116"/>
         </scene>
         <!--Sign InVC-->
         <scene sceneID="w4L-ui-H0y">
             <objects>
-                <viewController id="VRy-AM-hD7" customClass="SignInVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VRy-AM-hD7" customClass="SignInVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OSj-5Z-4hj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aN2-SW-eP3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4975" y="562"/>
+            <point key="canvasLocation" x="806" y="1052"/>
         </scene>
         <!--Home Care-->
         <scene sceneID="cPN-ar-R3f">
@@ -324,7 +326,7 @@
         <!--Sign Up GeneralVC-->
         <scene sceneID="EfO-hu-x2B">
             <objects>
-                <viewController id="esN-OF-C03" customClass="SignUpGeneralVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpGeneralVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="esN-OF-C03" customClass="SignUpGeneralVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fys-qQ-CQC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -405,7 +407,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJe-Tz-lAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4968.8000000000002" y="-258.62068965517244"/>
+            <point key="canvasLocation" x="806" y="-722"/>
         </scene>
         <!--Sign Up DriverVC-->
         <scene sceneID="5TQ-Jz-TPS">
