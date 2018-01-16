@@ -131,70 +131,6 @@
             </objects>
             <point key="canvasLocation" x="3077.5999999999999" y="133.5832083958021"/>
         </scene>
-        <!--VIewController04-->
-        <scene sceneID="Ip0-C7-xND">
-            <objects>
-                <viewController storyboardIdentifier="VIewController04" title="VIewController04" useStoryboardIdentifierAsRestorationIdentifier="YES" id="93h-kz-COn" customClass="ViewController04" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MqP-0I-3vg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helpinghands03" translatesAutoresizingMaskIntoConstraints="NO" id="sgs-1v-dww">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irJ-Fe-nHs">
-                                <rect key="frame" x="70" y="69" width="235" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="PRJ-rR-oqf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="31"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aS-Kj-blM">
-                                <rect key="frame" x="103" y="255" width="168" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.62745098039215685" blue="0.1764705882352941" alpha="0.7540373322147651" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="signUpButton:" destination="93h-kz-COn" eventType="touchUpInside" id="a3I-yq-TYE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97o-LO-Wb9">
-                                <rect key="frame" x="104" y="339" width="168" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.62561118199999999" blue="0.17602040820000001" alpha="0.74588401845637575" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="signInButton:" destination="93h-kz-COn" eventType="touchUpInside" id="1Nt-jA-V97"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.50946003399999995" blue="0.52444727889999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="sgs-1v-dww" firstAttribute="leading" secondItem="MqP-0I-3vg" secondAttribute="leading" id="41d-P4-w56"/>
-                            <constraint firstItem="irJ-Fe-nHs" firstAttribute="top" secondItem="prI-15-gV2" secondAttribute="top" constant="49" id="EEQ-jc-Kww"/>
-                            <constraint firstItem="sgs-1v-dww" firstAttribute="centerX" secondItem="irJ-Fe-nHs" secondAttribute="centerX" id="Hes-Cu-5oB"/>
-                            <constraint firstAttribute="trailing" secondItem="sgs-1v-dww" secondAttribute="trailing" id="PKj-Vp-9fd"/>
-                            <constraint firstItem="irJ-Fe-nHs" firstAttribute="leading" secondItem="prI-15-gV2" secondAttribute="leading" constant="70" id="SvY-Li-MZl"/>
-                            <constraint firstItem="sgs-1v-dww" firstAttribute="top" secondItem="MqP-0I-3vg" secondAttribute="top" id="hoA-Qg-cSt"/>
-                            <constraint firstItem="sgs-1v-dww" firstAttribute="bottom" secondItem="prI-15-gV2" secondAttribute="bottom" id="wJl-5Q-P4y"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="prI-15-gV2"/>
-                    </view>
-                    <connections>
-                        <outlet property="signIn" destination="97o-LO-Wb9" id="N4q-mg-iLI"/>
-                        <outlet property="signUpOutlet" destination="4aS-Kj-blM" id="b7x-qo-ylA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mu9-2M-RDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3890" y="116"/>
-        </scene>
         <!--Sign InVC-->
         <scene sceneID="w4L-ui-H0y">
             <objects>
@@ -223,7 +159,7 @@
                         <color key="backgroundColor" red="1" green="0.50946003399999995" blue="0.52444727889999998" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="Jy0-8z-1vU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home Care" image="homeCare_icon" id="rRy-Sb-fWC"/>
+                    <tabBarItem key="tabBarItem" title="Home Care" image="HH_house_icon" id="rRy-Sb-fWC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gft-FN-hz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,13 +169,20 @@
         <scene sceneID="B2O-Cl-jXm">
             <objects>
                 <viewController id="Lnr-Fc-782" customClass="SettingsVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="14D-RU-L1V">
+                    <view key="view" contentMode="scaleToFill" id="14D-RU-L1V" customClass="GradientView" customModule="HelpingHand" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.08235294118" green="0.1137254902" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="Vg0-Lh-IVO"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="1" green="0.62561118199999999" blue="0.17602040820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="settings_icon" id="JTy-fi-gE8">
+                    <tabBarItem key="tabBarItem" title="Settings" image="HH_profile_icon" id="JTy-fi-gE8">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                 </viewController>
@@ -251,7 +194,7 @@
         <scene sceneID="5CY-i5-Z1o">
             <objects>
                 <collectionViewController id="mKD-Pp-DgN" customClass="DeliveryVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="GKs-tc-Q3a">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" id="GKs-tc-Q3a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.44754464285714274" green="0.44642857142857145" blue="0.44634885204081631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -262,29 +205,84 @@
                             <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Sis-Ax-ivV">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="SlU-DX-mTd">
                                 <rect key="frame" x="5" y="50" width="180" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Homehealth02" translatesAutoresizingMaskIntoConstraints="NO" id="Po1-qP-hxR">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Sis-Ax-ivV">
+                                <rect key="frame" x="190" y="50" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Homehealth_driver11" translatesAutoresizingMaskIntoConstraints="NO" id="yfs-po-e1T">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vEn-D3-xF4">
+                                <rect key="frame" x="5" y="240" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Homehealth08" translatesAutoresizingMaskIntoConstraints="NO" id="oIN-Vy-ZfF">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
                                 </view>
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tgV-NW-T6t">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxT-Pm-KEu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick-Up Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96M-Ch-UPQ">
+                                            <rect key="frame" x="8" y="8" width="178" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="sxT-Pm-KEu" firstAttribute="leading" secondItem="tgV-NW-T6t" secondAttribute="leading" id="7yZ-9I-kbE"/>
+                                <constraint firstAttribute="trailing" secondItem="sxT-Pm-KEu" secondAttribute="trailing" id="KQk-YL-BV2"/>
+                                <constraint firstAttribute="bottom" secondItem="sxT-Pm-KEu" secondAttribute="bottom" id="h2C-dv-n4x"/>
+                                <constraint firstItem="sxT-Pm-KEu" firstAttribute="top" secondItem="tgV-NW-T6t" secondAttribute="top" id="u5p-FB-xQO"/>
+                            </constraints>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="mKD-Pp-DgN" id="MKQ-L6-6Hs"/>
                             <outlet property="delegate" destination="mKD-Pp-DgN" id="K8T-VB-Q6R"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Delivery" image="delivery_icon" id="AMe-oR-gbl"/>
+                    <tabBarItem key="tabBarItem" title="Delivery" image="HH_delivery_icon" id="AMe-oR-gbl"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KL0-DY-76w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8454" y="53"/>
+            <point key="canvasLocation" x="8453.6000000000004" y="52.623688155922046"/>
         </scene>
         <!--Transportation-->
         <scene sceneID="Ef9-eY-E0i">
@@ -296,7 +294,7 @@
                         <color key="backgroundColor" red="0.3041067616" green="0.60766265600000002" blue="0.72484611740000005" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="SoF-hc-FI8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Transportation" image="Transportation_icon" id="JES-fW-20l"/>
+                    <tabBarItem key="tabBarItem" title="Transportation" image="HH_car_icon" id="JES-fW-20l"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDJ-oa-J3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -348,7 +346,6 @@
                                 </state>
                                 <connections>
                                     <action selector="customerButton:" destination="esN-OF-C03" eventType="touchUpInside" id="NA6-QN-qgp"/>
-                                    <action selector="signUpButton:" destination="93h-kz-COn" eventType="touchUpInside" id="H6R-fn-xPO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHk-GI-eeN">
@@ -362,7 +359,6 @@
                                 </state>
                                 <connections>
                                     <action selector="driverButton:" destination="esN-OF-C03" eventType="touchUpInside" id="dju-iU-km6"/>
-                                    <action selector="signInButton:" destination="93h-kz-COn" eventType="touchUpInside" id="JHo-GY-NMJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvp-mb-G9b">
@@ -373,7 +369,6 @@
                                 </state>
                                 <connections>
                                     <action selector="nurseButton:" destination="esN-OF-C03" eventType="touchUpInside" id="SgA-T0-xYl"/>
-                                    <action selector="signUpButton:" destination="93h-kz-COn" eventType="touchUpInside" id="S2C-eZ-tks"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -498,17 +493,19 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HH_car_icon" width="40" height="26"/>
+        <image name="HH_delivery_icon" width="40" height="30"/>
+        <image name="HH_house_icon" width="45" height="33"/>
+        <image name="HH_profile_icon" width="32" height="31"/>
+        <image name="Homehealth02" width="1000" height="400"/>
         <image name="Homehealth07" width="1961" height="1654"/>
+        <image name="Homehealth08" width="1130" height="450"/>
         <image name="Homehealth_driver04" width="792" height="1363"/>
-        <image name="Transportation_icon" width="28" height="26"/>
-        <image name="delivery_icon" width="32" height="26"/>
+        <image name="Homehealth_driver11" width="593" height="282"/>
         <image name="helping_hand_transparent" width="225" height="235"/>
-        <image name="helpinghands03" width="750" height="499"/>
-        <image name="homeCare_icon" width="23" height="25"/>
         <image name="homehealth01" width="897" height="750"/>
-        <image name="settings_icon" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KKi-CA-cvb"/>
+        <segue reference="Fja-zf-gJF"/>
     </inferredMetricsTieBreakers>
 </document>

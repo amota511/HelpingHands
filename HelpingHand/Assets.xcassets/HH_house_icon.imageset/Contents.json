@@ -2,12 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Transportation_icon.png",
+      "filename" : "HH_house_icon.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "np_car_888653_FFFFFF.png",
       "scale" : "2x"
     },
     {
