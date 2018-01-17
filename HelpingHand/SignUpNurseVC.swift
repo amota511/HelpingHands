@@ -108,9 +108,7 @@ class SignUpNurseVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor(r: 255.0, g: 160, b: 45)
-        
+                
         view.addSubview(welcomeLabel)
         setwelcomeLabel()
         

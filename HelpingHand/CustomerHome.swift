@@ -26,7 +26,7 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 1.0) {
+        UIView.animate(withDuration: 1.0, delay: 0, options: [.curveEaseOut], animations: {
             self.titleLabel.alpha = 1.0
             self.collectionView.alpha = 1.0
             self.pageControl.alpha = 1.0
@@ -34,7 +34,7 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
             self.titleLabel.frame.origin.y = self.titleLabel.frame.origin.y - 15
             self.collectionView.frame.origin.y = self.collectionView.frame.origin.y - 15
             self.pageControl.frame.origin.y = self.pageControl.frame.origin.y - 15
-        }
+        }, completion: nil)
     }
     
     func configureTitleLabel() {
@@ -42,8 +42,8 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
         titleLabel.text = "Helping Hands"
         titleLabel.textColor = .white
         titleLabel.textAlignment = .left
-        titleLabel.shadowOffset = CGSize(width: 1, height: -1)
-        titleLabel.shadowColor = UIColor.darkGray
+        //titleLabel.shadowOffset = CGSize(width: 1, height: -1)
+        //titleLabel.shadowColor = UIColor.darkGray
         
         titleLabel.numberOfLines = 1
         
@@ -144,7 +144,7 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
     }
     
     func configurePageControl() {
-        self.pageControl = UIPageControl(frame: CGRect(x: 0, y: collectionView.frame.maxY + 20, width: UIScreen.main.bounds.width, height: 50))
+        self.pageControl = UIPageControl(frame: CGRect(x: 0, y: collectionView.frame.maxY + 20, width: self.view.bounds.width, height: 50))
         pageControl.numberOfPages = 4
         pageControl.currentPage = 0
         pageControl.alpha = 1.0

@@ -135,11 +135,19 @@
         <scene sceneID="w4L-ui-H0y">
             <objects>
                 <viewController storyboardIdentifier="SignInVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VRy-AM-hD7" customClass="SignInVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OSj-5Z-4hj">
+                    <view key="view" contentMode="scaleToFill" id="OSj-5Z-4hj" customClass="RadialGradientView" customModule="HelpingHand" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="jUh-eK-0pc"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="1" green="0.80070153060000004" blue="0.3664965986" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="1" green="0.21696960039999999" blue="0.2443930698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <segue destination="9Wz-AG-NJM" kind="presentation" identifier="SignInCustHomeSegue" modalTransitionStyle="flipHorizontal" id="9LT-jY-v1b"/>
@@ -368,7 +376,7 @@
         <scene sceneID="EfO-hu-x2B">
             <objects>
                 <viewController storyboardIdentifier="SignUpGeneralVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="esN-OF-C03" customClass="SignUpGeneralVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fys-qQ-CQC">
+                    <view key="view" contentMode="scaleToFill" id="fys-qQ-CQC" customClass="RadialGradientView" customModule="HelpingHand" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -433,6 +441,14 @@
                             <constraint firstItem="p1K-jd-gwm" firstAttribute="trailing" secondItem="AHk-GI-eeN" secondAttribute="trailing" id="zs5-JA-FJL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="S7S-xU-vdV"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="1" green="0.80070153060000004" blue="0.3664965986" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="1" green="0.21696960039999999" blue="0.2443930698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <outlet property="customerOutlet" destination="p1K-jd-gwm" id="ONu-P8-OhT"/>
@@ -451,11 +467,19 @@
         <scene sceneID="5TQ-Jz-TPS">
             <objects>
                 <viewController id="OCr-gm-qBk" customClass="SignUpDriverVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0GJ-X0-hXI">
+                    <view key="view" contentMode="scaleToFill" id="0GJ-X0-hXI" customClass="RadialGradientView" customModule="HelpingHand" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="I7d-Hb-bwT"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="1" green="0.80070153060000004" blue="0.3664965986" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="1" green="0.21696960039999999" blue="0.2443930698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5WB-ej-63m" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -466,11 +490,19 @@
         <scene sceneID="bSA-Fo-Vsi">
             <objects>
                 <viewController id="YSQ-bP-M6N" customClass="SignUpNurseVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CP1-5W-1XN">
+                    <view key="view" contentMode="scaleToFill" id="CP1-5W-1XN" customClass="RadialGradientView" customModule="HelpingHand" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="FdH-Cm-Wgl"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="1" green="0.80070153060000004" blue="0.3664965986" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="1" green="0.21696960039999999" blue="0.2443930698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qUV-Ze-p7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -481,11 +513,19 @@
         <scene sceneID="i3j-bh-A9f">
             <objects>
                 <viewController id="IJ4-RU-50I" customClass="SignUpCustomerVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9d4-jM-XxF">
+                    <view key="view" contentMode="scaleToFill" id="9d4-jM-XxF" customClass="RadialGradientView" customModule="HelpingHand" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="GhT-kT-lAV"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="1" green="0.80070153060000004" blue="0.3664965986" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="1" green="0.21696960039999999" blue="0.2443930698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <segue destination="9Wz-AG-NJM" kind="presentation" identifier="SignUpCustHomeSegue" modalTransitionStyle="flipHorizontal" id="dt4-8H-4na"/>
@@ -499,7 +539,7 @@
         <scene sceneID="owP-H6-NCj">
             <objects>
                 <viewController id="dyz-jX-bnV" customClass="StartVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Qac-ub-jEW">
+                    <view key="view" contentMode="scaleToFill" id="Qac-ub-jEW" customClass="RadialGradientView" customModule="HelpingHand" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -525,6 +565,14 @@
                             <constraint firstItem="hWV-LF-Km4" firstAttribute="leading" secondItem="YL3-Ub-NAf" secondAttribute="leading" constant="92" id="qqy-el-hxT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YL3-Ub-NAf"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="1" green="0.80070153060000004" blue="0.3664965986" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="1" green="0.21696960039999999" blue="0.2443930698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <segue destination="1Bu-QV-yYr" kind="presentation" identifier="Start" modalTransitionStyle="flipHorizontal" id="KsO-zK-egd"/>

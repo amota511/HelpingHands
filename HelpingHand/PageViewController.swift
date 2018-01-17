@@ -142,7 +142,17 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         let signUpButtonFrame = CGRect(x: self.view.frame.width * 0.525, y: self.view.frame.height * 0.915, width: self.view.frame.width * 0.45, height: self.view.frame.height * 0.07)
         
         signUpButton.frame = signUpButtonFrame
-        signUpButton.backgroundColor = UIColor.orange
+        //signUpButton.backgroundColor = UIColor.orange
+        
+        let gradient = RadialGradientView()
+        gradient.firstColor = UIColor(r: 255, g: 204, b: 93)
+        gradient.secondColor = UIColor(r: 255, g: 55, b: 62)
+        gradient.frame = signUpButtonFrame
+        
+        gradient.layer.cornerRadius = 3.5
+        gradient.clipsToBounds = true
+        
+        view.addSubview(gradient)
         
         signUpButton.setTitle("Create Account", for: .normal)
         signUpButton.setTitleColor(UIColor.white, for: .normal)
