@@ -10,11 +10,37 @@ import UIKit
 
 class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIScrollViewDelegate {
     
+    var titleLabel: UILabel!
     var collectionView: UICollectionView!
     var pageControl : UIPageControl!
     
+    let images = [#imageLiteral(resourceName: "HH_car_icon"),#imageLiteral(resourceName: "HH_delivery_icon"),#imageLiteral(resourceName: "HH_house_icon"),#imageLiteral(resourceName: "HH_profile_icon")]
+    let titles = ["Transportation", "Delivery", "Home Care", "Settings"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureTitleLabel()
+        configureCollectionView()
+        configurePageControl()
+    }
+    
+    func configureTitleLabel() {
+        titleLabel = UILabel(frame: CGRect(origin: CGPoint(x: 8, y: 20), size: CGSize(width: self.view.bounds.width - 8, height: self.view.bounds.height * 0.15)))
+        titleLabel.text = "Helping Hands"
+        titleLabel.textColor = .white
+        titleLabel.textAlignment = .left
+        titleLabel.shadowOffset = CGSize(width: -1, height: 1)
+        titleLabel.shadowColor = UIColor.lightGray
+        
+        titleLabel.numberOfLines = 1
+        
+        titleLabel.font = titleLabel.font.withSize(40)
+        
+        self.view.addSubview(titleLabel)
+    }
+    
+    func configureCollectionView() {
         
         //Create collectionview layout
         let flowLayout = UICollectionViewFlowLayout()
@@ -34,7 +60,7 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
         self.view.addSubview(collectionView)
         
         //Register collectionviewcell class
-        self.collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "reuseCell")
+        self.collectionView.register(HomeCell.self, forCellWithReuseIdentifier: "reuseCell")
         
         self.collectionView!.isScrollEnabled = true
         self.collectionView!.backgroundColor = .clear
@@ -49,7 +75,6 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
         self.collectionView.delegate = self
         
         
-        configurePageControl()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -57,14 +82,48 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reuseCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reuseCell", for: indexPath) as! HomeCell
         
         cell.layer.cornerRadius = 10
         cell.clipsToBounds = true
         
-        cell.backgroundColor = .white
+        cell.backgroundView = RadialGradientView()
+        let gradient = cell.backgroundView as! RadialGradientView
+        gradient.firstColor = UIColor(r: 255, g: 204, b: 93)
+        gradient.secondColor = UIColor(r: 255, g: 55, b: 62)
+        
+        //cell.backgroundColor = UIColor(r: 255, g: 97, b: 38)
+       
+        let img = cell.image
+        img.tintColor = .white
+        img.tintColorDidChange()
+        
+        img.frame = CGRect(x: 5, y: 10, width: cell.bounds.width - 10, height: cell.bounds.height * 0.7)
+        img.image = images[indexPath.row]
+        img.contentMode = .scaleAspectFit
+        
+        if cell.image.superview != cell {
+            cell.addSubview(img)
+        }
         
         
+        let title = cell.title
+        
+        title.frame = CGRect(origin: CGPoint(x: 15, y: cell.bounds.height * 0.6), size: CGSize(width: cell.bounds.width * 0.95, height: cell.bounds.height * 0.4))
+        title.text = titles[indexPath.row]
+        title.textColor = .white
+        title.textAlignment = .left
+        
+        title.numberOfLines = 1
+        
+        title.font = UIFont.boldSystemFont(ofSize: 30)
+        
+        if cell.title.superview != cell {
+            cell.addSubview(title)
+        }
+        
+        cell.layer.borderColor = UIColor.white.cgColor
+        cell.layer.borderWidth = 1
         
         return cell
     }
@@ -84,4 +143,31 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
         view.addSubview(pageControl)
     }
 
+}
+
+extension UIImage {
+    
+    func maskWithColor(color: UIColor) -> UIImage? {
+        let maskImage = cgImage!
+        
+        let width = size.width
+        let height = size.height
+        let bounds = CGRect(x: 0, y: 0, width: width, height: height)
+        
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.premultipliedLast.rawValue)
+        let context = CGContext(data: nil, width: Int(width), height: Int(height), bitsPerComponent: 8, bytesPerRow: 0, space: colorSpace, bitmapInfo: bitmapInfo.rawValue)!
+        
+        context.clip(to: bounds, mask: maskImage)
+        context.setFillColor(color.cgColor)
+        context.fill(bounds)
+        
+        if let cgImage = context.makeImage() {
+            let coloredImage = UIImage(cgImage: cgImage)
+            return coloredImage
+        } else {
+            return nil
+        }
+    }
+    
 }

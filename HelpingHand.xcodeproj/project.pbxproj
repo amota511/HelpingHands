@@ -16,6 +16,7 @@
 		1A8174DC200E39A500C58E6F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8174DB200E39A400C58E6F /* GradientView.swift */; };
 		1A8174DE200E418900C58E6F /* RadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8174DD200E418900C58E6F /* RadialGradientView.swift */; };
 		1A8174E0200EBA6300C58E6F /* CustomerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8174DF200EBA6300C58E6F /* CustomerHome.swift */; };
+		1A8174E2200ED09500C58E6F /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8174E1200ED09500C58E6F /* HomeCell.swift */; };
 		1A890F482007BEB8008B490E /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A890F472007BEB8008B490E /* StartVC.swift */; };
 		1A974DB31FF5BAE900BEC452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A974DB21FF5BAE900BEC452 /* AppDelegate.swift */; };
 		1A974DB51FF5BAE900BEC452 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A974DB41FF5BAE900BEC452 /* PageViewController.swift */; };
@@ -46,6 +47,7 @@
 		1A8174DB200E39A400C58E6F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		1A8174DD200E418900C58E6F /* RadialGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialGradientView.swift; sourceTree = "<group>"; };
 		1A8174DF200EBA6300C58E6F /* CustomerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerHome.swift; sourceTree = "<group>"; };
+		1A8174E1200ED09500C58E6F /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		1A890F472007BEB8008B490E /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		1A974DAF1FF5BAE900BEC452 /* HelpingHand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpingHand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A974DB21FF5BAE900BEC452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				1A974DB41FF5BAE900BEC452 /* PageViewController.swift */,
 				1A974DB61FF5BAE900BEC452 /* Main.storyboard */,
 				1A8174DF200EBA6300C58E6F /* CustomerHome.swift */,
+				1A8174E1200ED09500C58E6F /* HomeCell.swift */,
 				1A8174DB200E39A400C58E6F /* GradientView.swift */,
 				1A8174DD200E418900C58E6F /* RadialGradientView.swift */,
 				1A890F472007BEB8008B490E /* StartVC.swift */,
@@ -276,6 +279,7 @@
 				1A8174DC200E39A500C58E6F /* GradientView.swift in Sources */,
 				1A974DD51FF62E2000BEC452 /* SignUpNurseVC.swift in Sources */,
 				1A890F482007BEB8008B490E /* StartVC.swift in Sources */,
+				1A8174E2200ED09500C58E6F /* HomeCell.swift in Sources */,
 				1A7B52311FF7869700563321 /* HomeHealthCareVC.swift in Sources */,
 				1A974DB51FF5BAE900BEC452 /* PageViewController.swift in Sources */,
 				1A7B522D1FF7863500563321 /* TransportationVC.swift in Sources */,

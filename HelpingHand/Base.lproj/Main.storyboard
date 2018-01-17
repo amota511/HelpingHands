@@ -176,10 +176,10 @@
                         <viewLayoutGuide key="safeArea" id="cWc-tc-ijf"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                <color key="value" red="1" green="0.80070153060000004" blue="0.3664965986" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" red="0.95727040816326525" green="0.70166347789115646" blue="0.20368303571428573" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                <color key="value" red="1" green="0.43085671774693879" blue="0.42934204939183668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="value" red="1" green="0.38204187931156464" blue="0.14753401367755101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -536,10 +536,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="HH_car_icon" width="40" height="26"/>
-        <image name="HH_delivery_icon" width="40" height="30"/>
-        <image name="HH_house_icon" width="45" height="33"/>
-        <image name="HH_profile_icon" width="32" height="31"/>
+        <image name="HH_car_icon" width="659" height="544"/>
+        <image name="HH_delivery_icon" width="655" height="585"/>
+        <image name="HH_house_icon" width="660" height="572"/>
+        <image name="HH_profile_icon" width="634" height="580"/>
         <image name="Homehealth02" width="1000" height="400"/>
         <image name="Homehealth07" width="1961" height="1654"/>
         <image name="Homehealth08" width="1130" height="450"/>
