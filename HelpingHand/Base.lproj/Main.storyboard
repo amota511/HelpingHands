@@ -142,12 +142,12 @@
                         <viewLayoutGuide key="safeArea" id="jUh-eK-0pc"/>
                     </view>
                     <connections>
-                        <segue destination="b8O-6S-vbc" kind="show" identifier="SignInCustHomeSegue" id="KKi-CA-cvb"/>
+                        <segue destination="9Wz-AG-NJM" kind="presentation" identifier="SignInCustHomeSegue" modalTransitionStyle="flipHorizontal" id="9LT-jY-v1b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aN2-SW-eP3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="806" y="1052"/>
+            <point key="canvasLocation" x="806" y="1180"/>
         </scene>
         <!--Home Care-->
         <scene sceneID="cPN-ar-R3f">
@@ -165,20 +165,63 @@
             </objects>
             <point key="canvasLocation" x="8454" y="734"/>
         </scene>
+        <!--Customer Home-->
+        <scene sceneID="8lN-C2-R4z">
+            <objects>
+                <viewController id="9Wz-AG-NJM" customClass="CustomerHome" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ujc-dZ-P5O" customClass="RadialGradientView" customModule="HelpingHand" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="cWc-tc-ijf"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="1" green="0.80070153060000004" blue="0.3664965986" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="1" green="0.43085671774693879" blue="0.42934204939183668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="70g-8K-ff1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6126" y="134"/>
+        </scene>
         <!--Settings-->
         <scene sceneID="B2O-Cl-jXm">
             <objects>
                 <viewController id="Lnr-Fc-782" customClass="SettingsVC" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="14D-RU-L1V" customClass="GradientView" customModule="HelpingHand" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="14D-RU-L1V" customClass="RadialGradientView" customModule="HelpingHand" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KbI-xd-Nw0" customClass="RadialGradientView" customModule="HelpingHand" customModuleProvider="target">
+                                <rect key="frame" x="32" y="125" width="311" height="357"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                        <color key="value" red="1" green="0.80070153060000004" blue="0.3664965986" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                        <color key="value" red="1" green="0.21696960039999999" blue="0.2443930698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="KbI-xd-Nw0" firstAttribute="top" secondItem="Vg0-Lh-IVO" secondAttribute="top" constant="105" id="1eY-eM-EwJ"/>
+                            <constraint firstAttribute="trailing" secondItem="KbI-xd-Nw0" secondAttribute="trailing" constant="32" id="jRZ-A4-tR6"/>
+                            <constraint firstItem="Vg0-Lh-IVO" firstAttribute="bottom" secondItem="KbI-xd-Nw0" secondAttribute="bottom" constant="136" id="tCA-GB-7ww"/>
+                            <constraint firstItem="KbI-xd-Nw0" firstAttribute="leading" secondItem="14D-RU-L1V" secondAttribute="leading" constant="32" id="xd0-AM-TE6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Vg0-Lh-IVO"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                <color key="value" red="1" green="0.62561118199999999" blue="0.17602040820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="value" red="1" green="0.21696960036734694" blue="0.24439306976462583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" red="1" green="0.80070153061224492" blue="0.36649659863945577" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -188,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUw-Ua-D4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8454" y="1633"/>
+            <point key="canvasLocation" x="8453.6000000000004" y="1632.2338830584708"/>
         </scene>
         <!--Delivery-->
         <scene sceneID="5CY-i5-Z1o">
@@ -445,7 +488,7 @@
                         <viewLayoutGuide key="safeArea" id="GhT-kT-lAV"/>
                     </view>
                     <connections>
-                        <segue destination="b8O-6S-vbc" kind="show" identifier="SignUpCustHomeSegue" id="Fja-zf-gJF"/>
+                        <segue destination="9Wz-AG-NJM" kind="presentation" identifier="SignUpCustHomeSegue" modalTransitionStyle="flipHorizontal" id="dt4-8H-4na"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Au-1E-lLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -506,6 +549,6 @@
         <image name="homehealth01" width="897" height="750"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fja-zf-gJF"/>
+        <segue reference="9LT-jY-v1b"/>
     </inferredMetricsTieBreakers>
 </document>
