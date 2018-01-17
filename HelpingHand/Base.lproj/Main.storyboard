@@ -176,10 +176,10 @@
                         <viewLayoutGuide key="safeArea" id="cWc-tc-ijf"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                <color key="value" red="0.95727040816326525" green="0.70166347789115646" blue="0.20368303571428573" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" red="1" green="0.80070153060000004" blue="0.3664965986" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                <color key="value" red="1" green="0.38204187931156464" blue="0.14753401367755101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="value" red="1" green="0.21696960039999999" blue="0.2443930698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>

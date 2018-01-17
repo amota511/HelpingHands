@@ -25,19 +25,33 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
         configurePageControl()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 1.0) {
+            self.titleLabel.alpha = 1.0
+            self.collectionView.alpha = 1.0
+            self.pageControl.alpha = 1.0
+            
+            self.titleLabel.frame.origin.y = self.titleLabel.frame.origin.y - 15
+            self.collectionView.frame.origin.y = self.collectionView.frame.origin.y - 15
+            self.pageControl.frame.origin.y = self.pageControl.frame.origin.y - 15
+        }
+    }
+    
     func configureTitleLabel() {
-        titleLabel = UILabel(frame: CGRect(origin: CGPoint(x: 8, y: 20), size: CGSize(width: self.view.bounds.width - 8, height: self.view.bounds.height * 0.15)))
+        titleLabel = UILabel(frame: CGRect(origin: CGPoint(x: 8, y: 35), size: CGSize(width: self.view.bounds.width - 8, height: self.view.bounds.height * 0.15)))
         titleLabel.text = "Helping Hands"
         titleLabel.textColor = .white
         titleLabel.textAlignment = .left
-        titleLabel.shadowOffset = CGSize(width: -1, height: 1)
-        titleLabel.shadowColor = UIColor.lightGray
+        titleLabel.shadowOffset = CGSize(width: 1, height: -1)
+        titleLabel.shadowColor = UIColor.darkGray
         
         titleLabel.numberOfLines = 1
         
-        titleLabel.font = titleLabel.font.withSize(40)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 40)
         
         self.view.addSubview(titleLabel)
+        
+        titleLabel.alpha = 0
     }
     
     func configureCollectionView() {
@@ -51,7 +65,7 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
         flowLayout.minimumInteritemSpacing = self.view.bounds.width * 0.15
         
         //Create collectionview fgrame
-        let collectionViewFrame = CGRect(origin: CGPoint(x: 0, y: self.view.bounds.height * 0.2), size: CGSize(width: self.view.bounds.width, height: self.view.bounds.height * 0.6))
+        let collectionViewFrame = CGRect(origin: CGPoint(x: 0, y: (self.view.bounds.height * 0.2) + 15), size: CGSize(width: self.view.bounds.width, height: self.view.bounds.height * 0.6))
         
         //Create collectionview with frame and layout
         self.collectionView = UICollectionView(frame: collectionViewFrame, collectionViewLayout: flowLayout)
@@ -74,7 +88,7 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         
-        
+        self.collectionView.alpha = 0
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -91,8 +105,6 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
         let gradient = cell.backgroundView as! RadialGradientView
         gradient.firstColor = UIColor(r: 255, g: 204, b: 93)
         gradient.secondColor = UIColor(r: 255, g: 55, b: 62)
-        
-        //cell.backgroundColor = UIColor(r: 255, g: 97, b: 38)
        
         let img = cell.image
         img.tintColor = .white
@@ -105,7 +117,6 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
         if cell.image.superview != cell {
             cell.addSubview(img)
         }
-        
         
         let title = cell.title
         
@@ -133,41 +144,21 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
     }
     
     func configurePageControl() {
-        self.pageControl = UIPageControl(frame: CGRect(x: 0, y: collectionView.frame.maxY + 5, width: UIScreen.main.bounds.width, height: 50))
+        self.pageControl = UIPageControl(frame: CGRect(x: 0, y: collectionView.frame.maxY + 20, width: UIScreen.main.bounds.width, height: 50))
         pageControl.numberOfPages = 4
         pageControl.currentPage = 0
         pageControl.alpha = 1.0
         pageControl.tintColor = UIColor.black
         pageControl.pageIndicatorTintColor = UIColor.lightGray
         pageControl.currentPageIndicatorTintColor = UIColor.white
+        pageControl.alpha = 0
         view.addSubview(pageControl)
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row)
     }
 
 }
 
-extension UIImage {
-    
-    func maskWithColor(color: UIColor) -> UIImage? {
-        let maskImage = cgImage!
-        
-        let width = size.width
-        let height = size.height
-        let bounds = CGRect(x: 0, y: 0, width: width, height: height)
-        
-        let colorSpace = CGColorSpaceCreateDeviceRGB()
-        let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.premultipliedLast.rawValue)
-        let context = CGContext(data: nil, width: Int(width), height: Int(height), bitsPerComponent: 8, bytesPerRow: 0, space: colorSpace, bitmapInfo: bitmapInfo.rawValue)!
-        
-        context.clip(to: bounds, mask: maskImage)
-        context.setFillColor(color.cgColor)
-        context.fill(bounds)
-        
-        if let cgImage = context.makeImage() {
-            let coloredImage = UIImage(cgImage: cgImage)
-            return coloredImage
-        } else {
-            return nil
-        }
-    }
-    
-}
