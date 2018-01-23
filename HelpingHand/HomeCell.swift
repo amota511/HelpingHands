@@ -12,4 +12,5 @@ class HomeCell: UICollectionViewCell {
     
     var image = UIImageView()
     var title = UILabel()
+    var shadow = UIView()
 }

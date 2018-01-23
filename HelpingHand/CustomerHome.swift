@@ -98,8 +98,10 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reuseCell", for: indexPath) as! HomeCell
         
-        cell.layer.cornerRadius = 10
         cell.clipsToBounds = true
+        cell.layer.cornerRadius = 10
+        cell.layer.borderColor = UIColor.white.cgColor
+        cell.layer.borderWidth = 1
         
         cell.backgroundView = RadialGradientView()
         let gradient = cell.backgroundView as! RadialGradientView
@@ -133,8 +135,15 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
             cell.addSubview(title)
         }
         
-        cell.layer.borderColor = UIColor.white.cgColor
-        cell.layer.borderWidth = 1
+        //////////////////Work on shadow\\\\\\\\\\\\\\\\\\\\
+//        cell.shadow.backgroundColor = UIColor.darkGray
+//        cell.shadow.frame = cell.frame
+//        cell.shadow.center = CGPoint(x: cell.center.x - 5, y: cell.center.y + 5)
+//        cell.shadow.layer.cornerRadius = 10
+//        
+//        if cell.shadow.superview != cell {
+//            cell.insertSubview(cell.shadow, at: 1)
+//        }
         
         return cell
     }
@@ -157,7 +166,56 @@ class CustomerHome: UIViewController, UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
+        //let cell = collectionView.cellForItem(at: indexPath)!
+        
+        let detailVC = determineViewControllerToLoad(index: indexPath.row)
+        
+        setupDetailView(vc: detailVC)
+    }
+    
+    func determineViewControllerToLoad(index: Int) -> UIViewController {
+        
+        let v1: UIViewController!
+        
+        switch index {
+        case 0:
+            v1 = TransportationDetailVC()
+        case 1:
+            v1 = DeliveryDetailVC()
+        case 2:
+            v1 = HomeCareDetailVC()
+        case 3:
+            v1 = SettingsDetailVC()
+        default:
+            v1 = TransportationDetailVC()
+        }
+
+        self.addChildViewController(v1)
+        v1.didMove(toParentViewController: self)
+        
+        return v1
+    }
+    
+    func setupDetailView(vc: UIViewController) {
+        
+        let detailView = vc.view!
+        detailView.frame.size = CGSize(width: self.view.bounds.width * 0.70, height: self.view.bounds.height * 0.55)
+        detailView.center = collectionView.center
+        
+        
+        collectionView.isScrollEnabled = false
+        
+        UIView.animate(withDuration: 0.75, delay: 0.0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.5, options: [.curveEaseOut], animations: {
+            
+            detailView.backgroundColor = .white
+            detailView.frame.size = CGSize(width: self.view.frame.size.width * 0.95, height: self.view.frame.size.height * 0.95)
+            detailView.center = self.view.center
+            self.view.addSubview(detailView)
+            
+            
+        }) { (completion) in
+            detailView.layer.cornerRadius = 10
+        }
     }
 
 }

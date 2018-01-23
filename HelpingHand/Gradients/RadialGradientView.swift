@@ -24,6 +24,10 @@ class RadialGradientView: UIView {
         
         UIGraphicsGetCurrentContext()!.drawRadialGradient(gradient!, startCenter: center, startRadius: 0.0, endCenter: center, endRadius: endRadius, options: .drawsAfterEndLocation)
     }
+    
+    func roundCorners(amt: CGFloat) {
+        self.layer.cornerRadius = amt
+    }
  
 
 }
